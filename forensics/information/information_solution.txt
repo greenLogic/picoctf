@@ -1,0 +1,18 @@
+picoCTF{the_m3tadata_1s_modified}
+
+A field on the strings of the image were Base64 decoded.
+
+Hubo algunos sitios que fueron de gran utilidad para resolver los problemas:
+
+[Beginners CTF Guide: Finding Hidden Data in Images](https://infosecwriteups.com/beginners-ctf-guide-finding-hidden-data-in-images-e3be9e34ae0d)
+[FotoForensics](https://fotoforensics.com/analysis.php?id=18ae1bee97d1f6c33e050468fd47022391d07075.878136)
+[Forensically](https://29a.ch/photo-forensics/#strings)
+[IPTC Photo Metadata](https://getpmd.iptc.org/upload)
+[Ghiro](http://www.imageforensic.org/show/96a7f666c0bf82891135e98c8c2e5bea/54963654-1731-4832-941d-72a4d9090907#static)
+
+Una manera de resolver esto fue con el comando base64:
+
+```console
+echo | awk 'NR==12' cat.strings.txt | awk '{print substr($2,15,35)}' > important.txt 
+base64 -d important.txt
+```

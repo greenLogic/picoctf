@@ -1,0 +1,16 @@
+I ssh to the server and use the given password.
+
+The session starts in the folder ~/drop-in where is a file called 1of3.flag.txt, and another one named instructions-to-2of3.txt
+
+This 1of3.flag.txt file is the first part of the flag. While the other one gives hints to get the second part.
+
+The second part is in a file named 2of3.flag.txt located in the root folder. This folder also contains another file named instructions-to-3of-3.txt.
+
+The instruction in this last file is to go to home folder, where is the 3of3.flag.txt that contains the final part of the flag, this is:
+
+picoCTF{xxsh_
+0ut_0f_\/\/4t3r
+c1754242}
+
+picoCTF{xxsh_0ut_0f_\/\/4t3rc1754242}
+

@@ -1,0 +1,25 @@
+The string in hex to convert is 0x070.
+
+Is possible convert it with online services like [RapidTables](https://www.rapidtables.com/convert/number/hex-to-ascii.html). But we are doing it using just bash commands:
+
+Using printf:
+
+printf '\x70'
+
+Now with echo:
+
+echo -e "\x70"
+
+And now dumping it with xxd:
+
+echo 70 | xxd -r -p
+
+Please look that the string dropped the 0 that is front of the 70.
+
+The ASCII equivalent is the letter p.
+
+Thus the flag is: 
+
+picoCTF{p}
+
+I read this post of the [Baeldung blog](https://www.baeldung.com/linux/character-hex-to-ascii). I recommend you to check it out.

@@ -1,0 +1,5 @@
+The server response were encoded as numbers, these needed to be converted to ASCII symbols.
+
+The tool used was: [dcode.fr](https://www.dcode.fr/ascii-code)
+
+picoCTF{g00d_k1tty!_n1c3_k1tty!_9b3b7392}
