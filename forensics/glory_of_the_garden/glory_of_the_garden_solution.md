@@ -25,4 +25,4 @@ The file is uploaded, and after that we search the button `Show Strings`. And lo
 
 ![Flag using an online tool](flag2.png)
 
-While this exercise is to start a journey on this topic, it has a place on the real-world security, where adversaries do their best to, as they said: "Put the data, hidden in plainsight".
+While this exercise is the starting point of our journey on this topic, it holds significance in real-world security. Here, adversaries strive to do what they say: 'Put the data where it is hidden in plain sight.'
